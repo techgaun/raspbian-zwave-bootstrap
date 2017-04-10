@@ -11,11 +11,11 @@ red='\033[0;31m'
 green='\033[0;32m'
 nc='\033[0m'
 default_err="An error occurred."
-root_dir="/opt/techgaun"
+root_dir="${ROOT_DIR:-/opt/techgaun}"
 pyozw_dir="${root_dir}/pyozw"
 pyozw_branch="python3"
 pyozw_url="https://github.com/OpenZWave/python-openzwave.git"
-user="techgaun"
+user="${ZWAVE_USER:-techgaun}"
 zwave_log_file="/var/log/techgaun-zwave.log"
 
 is_root() {
